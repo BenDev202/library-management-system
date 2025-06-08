@@ -32,12 +32,12 @@ const BookOverview = ({title, author, genre, rating, total_copies, available_cop
             </div>
             <p className='book-description'>
             {description}
-
-            <Button className='book-overview_btn'>
+            </p>
+            <Button className='book-overivew_btn'>
               <Image src="/icons/book.svg" alt='book' width={20} height={20} />
               <p className='font-bebas-neue text-xl text-dark-100'>Borrow Book</p>
             </Button>
-        </p>
+        
         </div>
 
         <div className='relative flex flex-1 justify-center'>

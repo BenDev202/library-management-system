@@ -5,7 +5,7 @@ import { sampleBooks } from "@/constants";
 export default function Home() {
   return (
     <div>
-      <BookOverview {...sampleBooks[0]} />
+      <BookOverview createdAt={null} {...sampleBooks[0]} />
 
       <BookList 
           title="Latest Books"
