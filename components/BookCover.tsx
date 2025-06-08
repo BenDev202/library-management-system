@@ -19,7 +19,7 @@ interface Props {
     coverImage: string;
 }
 
-const BookCover = ({className, variant = 'regular', coverImage = 'https://placeholder.co/400x600.png', coverColor = '#012B48'}: Props) => {
+const BookCover = ({className, variant = 'regular', coverImage = 'https://placehold.co/400x600.png', coverColor = '#012B48'}: Props) => {
   return (
     <div className={cn('relative transition-all duration-300', variantStyles[variant], className)}>
       Book Side svg
