@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils';
 import React from 'react'
 import Image from 'next/image';
+import BookCoverSvg from './BookCoverSvg';
 
 type BookCoverVariant = "extraSmall" | "small" | "medium" | "regular"  | "wide";
 
@@ -22,9 +23,8 @@ interface Props {
 const BookCover = ({className, variant = 'regular', coverImage = 'https://placehold.co/400x600.png', coverColor = '#012B48'}: Props) => {
   return (
     <div className={cn('relative transition-all duration-300', variantStyles[variant], className)}>
-      Book Side svg
-
-      <div className='absolute z-10' style={{left: '120%', width: '87.5%', height: '88%'}} >
+      <BookCoverSvg coverColor={coverColor} />
+      <div className='absolute z-10' style={{left: '12%', width: '87.5%', height: '88%'}} >
         <Image src={coverImage} alt={'Book cover'} fill className='rounded-sm object-fill' />
       </div>
     </div>

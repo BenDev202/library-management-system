@@ -46,7 +46,7 @@ const BookOverview = ({title, author, genre, rating, total_copies, available_cop
                 variant="wide"
                 className="z-10"
                 coverColor={color}
-                CoverImage={cover}
+                coverImage={cover}
               
               />
 
@@ -54,7 +54,7 @@ const BookOverview = ({title, author, genre, rating, total_copies, available_cop
                 <BookCover
                 variant="wide"
                 coverColor={color}
-                CoverImage={cover}
+                coverImage={cover}
               
               />
               </div>
